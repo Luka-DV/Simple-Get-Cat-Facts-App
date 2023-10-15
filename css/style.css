@@ -1,0 +1,58 @@
+/******************************************
+/* CSS
+/*******************************************/
+
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body::before {
+  content: "";
+  background: url(../img/vecteezy_seamless-vector-pattern-with-cute-cats-and-paws_.jpg);
+  background-size: cover;
+  position: fixed;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+  opacity: 0.40;
+  z-index: -1;
+}
+
+body {
+  font-family: 'Oswald', sans-serif;
+}
+
+header, main {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+h1, h2 {
+ width: 100%;
+ text-align: center;
+}
+ul {
+  width: 70%;
+  font-size: clamp(1.1em, 1.5vw, 1.3em)
+}
+
+li {
+  padding: 0.5vw;
+}
+
+img{
+  width: clamp(300px, 50%, 1500px);
+  border-radius: 5%;
+}
+
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
